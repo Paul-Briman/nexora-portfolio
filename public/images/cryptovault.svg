@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#042f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg2)"/>
+  <g opacity="0.06">
+    <line x1="0" y1="75" x2="800" y2="75" stroke="#10b981" stroke-width="0.5"/>
+    <line x1="0" y1="150" x2="800" y2="150" stroke="#10b981" stroke-width="0.5"/>
+    <line x1="0" y1="225" x2="800" y2="225" stroke="#10b981" stroke-width="0.5"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="#10b981" stroke-width="0.5"/>
+    <line x1="0" y1="375" x2="800" y2="375" stroke="#10b981" stroke-width="0.5"/>
+  </g>
+  <circle cx="650" cy="120" r="200" fill="#10b981" opacity="0.05"/>
+  <circle cx="150" cy="350" r="180" fill="#06b6d4" opacity="0.05"/>
+  <!-- Dashboard frame -->
+  <rect x="120" y="60" width="560" height="330" rx="12" fill="#111827" stroke="#1e293b" stroke-width="1"/>
+  <rect x="120" y="60" width="560" height="36" rx="12" fill="#1e293b"/>
+  <circle cx="144" cy="78" r="5" fill="#ef4444" opacity="0.8"/>
+  <circle cx="162" cy="78" r="5" fill="#eab308" opacity="0.8"/>
+  <circle cx="180" cy="78" r="5" fill="#22c55e" opacity="0.8"/>
+  <!-- Sidebar -->
+  <rect x="120" y="96" width="120" height="294" fill="#0f172a"/>
+  <rect x="135" y="115" width="90" height="8" rx="4" fill="#10b981" opacity="0.3"/>
+  <rect x="135" y="140" width="70" height="6" rx="3" fill="#94a3b8" opacity="0.2"/>
+  <rect x="135" y="160" width="80" height="6" rx="3" fill="#94a3b8" opacity="0.2"/>
+  <rect x="135" y="180" width="60" height="6" rx="3" fill="#94a3b8" opacity="0.2"/>
+  <rect x="135" y="200" width="75" height="6" rx="3" fill="#94a3b8" opacity="0.2"/>
+  <!-- Chart area -->
+  <polyline points="270,280 320,240 370,260 420,200 470,220 520,170 570,180 620,140 650,155" fill="none" stroke="url(#accent2)" stroke-width="2.5" opacity="0.8"/>
+  <polyline points="270,280 320,240 370,260 420,200 470,220 520,170 570,180 620,140 650,155 650,300 270,300" fill="url(#accent2)" opacity="0.08"/>
+  <!-- Stat cards -->
+  <rect x="260" y="110" width="130" height="60" rx="8" fill="#10b981" opacity="0.1" stroke="#10b981" stroke-width="0.5" stroke-opacity="0.2"/>
+  <rect x="400" y="110" width="130" height="60" rx="8" fill="#06b6d4" opacity="0.1" stroke="#06b6d4" stroke-width="0.5" stroke-opacity="0.2"/>
+  <rect x="540" y="110" width="120" height="60" rx="8" fill="#10b981" opacity="0.1" stroke="#10b981" stroke-width="0.5" stroke-opacity="0.2"/>
+  <text x="295" y="138" font-family="system-ui" font-size="11" fill="#10b981">$127,450</text>
+  <text x="435" y="138" font-family="system-ui" font-size="11" fill="#06b6d4">+24.8%</text>
+  <text x="572" y="138" font-family="system-ui" font-size="11" fill="#10b981">12 Assets</text>
+  <text x="400" y="420" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8" letter-spacing="3">INVESTMENT DASHBOARD</text>
+</svg>

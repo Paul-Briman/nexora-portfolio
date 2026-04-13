@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Grid pattern -->
+  <g opacity="0.08">
+    <line x1="0" y1="75" x2="800" y2="75" stroke="#3b82f6" stroke-width="0.5"/>
+    <line x1="0" y1="150" x2="800" y2="150" stroke="#3b82f6" stroke-width="0.5"/>
+    <line x1="0" y1="225" x2="800" y2="225" stroke="#3b82f6" stroke-width="0.5"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="#3b82f6" stroke-width="0.5"/>
+    <line x1="0" y1="375" x2="800" y2="375" stroke="#3b82f6" stroke-width="0.5"/>
+    <line x1="100" y1="0" x2="100" y2="450" stroke="#3b82f6" stroke-width="0.5"/>
+    <line x1="200" y1="0" x2="200" y2="450" stroke="#3b82f6" stroke-width="0.5"/>
+    <line x1="300" y1="0" x2="300" y2="450" stroke="#3b82f6" stroke-width="0.5"/>
+    <line x1="500" y1="0" x2="500" y2="450" stroke="#3b82f6" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="450" stroke="#3b82f6" stroke-width="0.5"/>
+    <line x1="700" y1="0" x2="700" y2="450" stroke="#3b82f6" stroke-width="0.5"/>
+  </g>
+  <!-- Glow orbs -->
+  <circle cx="200" cy="150" r="180" fill="#3b82f6" opacity="0.06"/>
+  <circle cx="600" cy="300" r="200" fill="#8b5cf6" opacity="0.06"/>
+  <!-- UI Mockup: Browser frame -->
+  <rect x="120" y="60" width="560" height="330" rx="12" fill="#111827" stroke="#1e293b" stroke-width="1"/>
+  <!-- Browser bar -->
+  <rect x="120" y="60" width="560" height="36" rx="12" fill="#1e293b"/>
+  <circle cx="144" cy="78" r="5" fill="#ef4444" opacity="0.8"/>
+  <circle cx="162" cy="78" r="5" fill="#eab308" opacity="0.8"/>
+  <circle cx="180" cy="78" r="5" fill="#22c55e" opacity="0.8"/>
+  <rect x="220" y="70" width="200" height="16" rx="8" fill="#0f172a"/>
+  <!-- Gallery grid mockup -->
+  <rect x="140" y="110" width="160" height="120" rx="6" fill="url(#accent)" opacity="0.3"/>
+  <rect x="310" y="110" width="160" height="120" rx="6" fill="#8b5cf6" opacity="0.2"/>
+  <rect x="480" y="110" width="180" height="120" rx="6" fill="#3b82f6" opacity="0.2"/>
+  <rect x="140" y="240" width="180" height="100" rx="6" fill="#8b5cf6" opacity="0.15"/>
+  <rect x="330" y="240" width="160" height="100" rx="6" fill="url(#accent)" opacity="0.2"/>
+  <rect x="500" y="240" width="160" height="100" rx="6" fill="#3b82f6" opacity="0.15"/>
+  <!-- Camera icon -->
+  <g transform="translate(370, 150)" opacity="0.6">
+    <rect x="0" y="8" width="60" height="44" rx="8" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+    <circle cx="30" cy="30" r="12" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="18" y="2" width="24" height="10" rx="4" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+  </g>
+  <!-- Title -->
+  <text x="400" y="420" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8" letter-spacing="3">PHOTOGRAPHY PLATFORM</text>
+</svg>

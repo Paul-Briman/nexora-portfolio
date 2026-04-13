@@ -67,19 +67,26 @@ export const services: Service[] = [
 
 export interface WorkProject {
   title: string;
+  subtitle: string;
   description: string;
+  image: string;
+  gradient: string;
   highlights?: string[];
   results?: string[];
   techStack: string[];
   live?: string;
+  github?: string;
   featured?: boolean;
 }
 
 export const workProjects: WorkProject[] = [
   {
-    title: "Lumina \u2013 Photography Platform",
+    title: "Lumina",
+    subtitle: "Photography Platform",
     description:
-      "A full-stack photography platform helping photographers worldwide deliver secure client galleries, manage downloads, and generate professional invoices \u2014 all from one system.",
+      "Secure client galleries, smart cross-device downloads, and professional invoicing for photographers worldwide.",
+    image: "/images/lumina.svg",
+    gradient: "from-blue-600/20 via-purple-600/20 to-indigo-600/20",
     highlights: [
       "PIN-protected client galleries with secure delivery",
       "Smart cross-device downloads (iOS, Android, desktop)",
@@ -96,31 +103,42 @@ export const workProjects: WorkProject[] = [
       "TypeScript",
       "Tailwind",
       "Node.js",
-      "Express",
       "PostgreSQL",
       "Cloudinary",
-      "JWT",
     ],
     live: "https://luminashots.com",
+    github: "https://github.com/Paul-Briman/lumina-photography",
     featured: true,
   },
   {
-    title: "CryptoVault \u2013 Investment Dashboard",
+    title: "CryptoVault",
+    subtitle: "Investment Dashboard",
     description:
-      "A real-time crypto investment platform with portfolio tracking, plan management, and clean data visualization \u2014 built for financial clarity and secure transactions.",
+      "Real-time portfolio tracking, investment plans, and clean data visualization for financial clarity.",
+    image: "/images/cryptovault.svg",
+    gradient: "from-emerald-600/20 via-teal-600/20 to-cyan-600/20",
     techStack: ["React", "Node.js", "Express", "PostgreSQL", "JWT", "REST API"],
+    github: "https://github.com/Paul-Briman",
   },
   {
-    title: "VoxAgent \u2013 AI Business Automation",
+    title: "VoxAgent",
+    subtitle: "AI Business Automation",
     description:
-      "An AI-powered automation platform with intelligent voice agents for customer support, lead qualification, and appointment scheduling \u2014 reducing manual overhead for businesses.",
+      "Intelligent voice agents for customer support, lead qualification, and appointment scheduling.",
+    image: "/images/voxagent.svg",
+    gradient: "from-violet-600/20 via-fuchsia-600/20 to-pink-600/20",
     techStack: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "REST API"],
+    github: "https://github.com/Paul-Briman",
   },
   {
-    title: "AdminCore \u2013 Enterprise Dashboard",
+    title: "AdminCore",
+    subtitle: "Enterprise Dashboard",
     description:
-      "A modular admin system with role-based access control, real-time analytics widgets, and a scalable architecture \u2014 designed for multi-tenant business environments.",
+      "Role-based access, real-time analytics, and modular widgets for multi-tenant business environments.",
+    image: "/images/admincore.svg",
+    gradient: "from-amber-600/20 via-orange-600/20 to-red-600/20",
     techStack: ["React", "TypeScript", "Tailwind", "Node.js", "PostgreSQL", "JWT"],
+    github: "https://github.com/Paul-Briman",
   },
 ];
 

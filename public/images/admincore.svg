@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#431407;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg4)"/>
+  <circle cx="650" cy="100" r="180" fill="#f59e0b" opacity="0.04"/>
+  <circle cx="150" cy="380" r="200" fill="#ef4444" opacity="0.03"/>
+  <!-- Dashboard frame -->
+  <rect x="100" y="50" width="600" height="350" rx="12" fill="#111827" stroke="#1e293b" stroke-width="1"/>
+  <rect x="100" y="50" width="600" height="36" rx="12" fill="#1e293b"/>
+  <circle cx="124" cy="68" r="5" fill="#ef4444" opacity="0.8"/>
+  <circle cx="142" cy="68" r="5" fill="#eab308" opacity="0.8"/>
+  <circle cx="160" cy="68" r="5" fill="#22c55e" opacity="0.8"/>
+  <!-- Sidebar -->
+  <rect x="100" y="86" width="140" height="314" fill="#0f172a"/>
+  <rect x="115" y="105" width="110" height="10" rx="5" fill="#f59e0b" opacity="0.25"/>
+  <rect x="115" y="130" width="90" height="6" rx="3" fill="#f59e0b" opacity="0.15"/>
+  <rect x="115" y="148" width="80" height="6" rx="3" fill="#94a3b8" opacity="0.15"/>
+  <rect x="115" y="166" width="100" height="6" rx="3" fill="#94a3b8" opacity="0.15"/>
+  <rect x="115" y="184" width="70" height="6" rx="3" fill="#94a3b8" opacity="0.15"/>
+  <rect x="115" y="202" width="85" height="6" rx="3" fill="#94a3b8" opacity="0.15"/>
+  <!-- Stat cards -->
+  <rect x="260" y="100" width="140" height="75" rx="10" fill="#f59e0b" opacity="0.08" stroke="#f59e0b" stroke-width="0.5" stroke-opacity="0.2"/>
+  <rect x="415" y="100" width="140" height="75" rx="10" fill="#ef4444" opacity="0.08" stroke="#ef4444" stroke-width="0.5" stroke-opacity="0.2"/>
+  <rect x="570" y="100" width="110" height="75" rx="10" fill="#f59e0b" opacity="0.08" stroke="#f59e0b" stroke-width="0.5" stroke-opacity="0.2"/>
+  <text x="290" y="132" font-family="system-ui" font-size="16" font-weight="bold" fill="#f59e0b" opacity="0.8">2,847</text>
+  <text x="290" y="150" font-family="system-ui" font-size="9" fill="#94a3b8" opacity="0.6">Total Users</text>
+  <text x="445" y="132" font-family="system-ui" font-size="16" font-weight="bold" fill="#ef4444" opacity="0.8">$48.2K</text>
+  <text x="445" y="150" font-family="system-ui" font-size="9" fill="#94a3b8" opacity="0.6">Revenue</text>
+  <text x="590" y="132" font-family="system-ui" font-size="16" font-weight="bold" fill="#f59e0b" opacity="0.8">99.9%</text>
+  <text x="590" y="150" font-family="system-ui" font-size="9" fill="#94a3b8" opacity="0.6">Uptime</text>
+  <!-- Table mockup -->
+  <rect x="260" y="195" width="420" height="30" rx="4" fill="#1e293b" opacity="0.5"/>
+  <rect x="260" y="230" width="420" height="25" rx="0" fill="transparent" stroke="#1e293b" stroke-width="0.5"/>
+  <rect x="260" y="255" width="420" height="25" rx="0" fill="#1e293b" opacity="0.2"/>
+  <rect x="260" y="280" width="420" height="25" rx="0" fill="transparent" stroke="#1e293b" stroke-width="0.5"/>
+  <rect x="260" y="305" width="420" height="25" rx="0" fill="#1e293b" opacity="0.2"/>
+  <rect x="260" y="330" width="420" height="25" rx="0" fill="transparent" stroke="#1e293b" stroke-width="0.5"/>
+  <!-- Role badges in table -->
+  <rect x="560" y="235" width="40" height="14" rx="7" fill="#22c55e" opacity="0.2"/>
+  <rect x="560" y="260" width="40" height="14" rx="7" fill="#f59e0b" opacity="0.2"/>
+  <rect x="560" y="285" width="40" height="14" rx="7" fill="#3b82f6" opacity="0.2"/>
+  <rect x="560" y="310" width="40" height="14" rx="7" fill="#22c55e" opacity="0.2"/>
+  <rect x="560" y="335" width="40" height="14" rx="7" fill="#ef4444" opacity="0.2"/>
+  <text x="400" y="420" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8" letter-spacing="3">ENTERPRISE DASHBOARD</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2e1065;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg3)"/>
+  <circle cx="400" cy="225" r="250" fill="#a855f7" opacity="0.04"/>
+  <circle cx="250" cy="150" r="150" fill="#ec4899" opacity="0.04"/>
+  <circle cx="550" cy="300" r="180" fill="#a855f7" opacity="0.03"/>
+  <!-- Central AI brain -->
+  <circle cx="400" cy="200" r="80" fill="none" stroke="url(#accent3)" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="400" cy="200" r="55" fill="none" stroke="url(#accent3)" stroke-width="1" opacity="0.3"/>
+  <circle cx="400" cy="200" r="30" fill="url(#accent3)" opacity="0.15"/>
+  <!-- Pulse rings -->
+  <circle cx="400" cy="200" r="110" fill="none" stroke="#a855f7" stroke-width="0.5" opacity="0.2" stroke-dasharray="8 4"/>
+  <circle cx="400" cy="200" r="140" fill="none" stroke="#ec4899" stroke-width="0.5" opacity="0.15" stroke-dasharray="6 6"/>
+  <!-- Connection nodes -->
+  <circle cx="280" cy="130" r="20" fill="#a855f7" opacity="0.15" stroke="#a855f7" stroke-width="0.5" stroke-opacity="0.3"/>
+  <circle cx="520" cy="130" r="20" fill="#ec4899" opacity="0.15" stroke="#ec4899" stroke-width="0.5" stroke-opacity="0.3"/>
+  <circle cx="280" cy="280" r="20" fill="#ec4899" opacity="0.15" stroke="#ec4899" stroke-width="0.5" stroke-opacity="0.3"/>
+  <circle cx="520" cy="280" r="20" fill="#a855f7" opacity="0.15" stroke="#a855f7" stroke-width="0.5" stroke-opacity="0.3"/>
+  <!-- Connection lines -->
+  <line x1="300" y1="140" x2="370" y2="185" stroke="#a855f7" stroke-width="0.8" opacity="0.3"/>
+  <line x1="500" y1="140" x2="430" y2="185" stroke="#ec4899" stroke-width="0.8" opacity="0.3"/>
+  <line x1="300" y1="270" x2="370" y2="215" stroke="#ec4899" stroke-width="0.8" opacity="0.3"/>
+  <line x1="500" y1="270" x2="430" y2="215" stroke="#a855f7" stroke-width="0.8" opacity="0.3"/>
+  <!-- Labels -->
+  <text x="280" y="134" text-anchor="middle" font-family="system-ui" font-size="9" fill="#e2e8f0" opacity="0.6">VOICE</text>
+  <text x="520" y="134" text-anchor="middle" font-family="system-ui" font-size="9" fill="#e2e8f0" opacity="0.6">LEADS</text>
+  <text x="280" y="284" text-anchor="middle" font-family="system-ui" font-size="9" fill="#e2e8f0" opacity="0.6">SUPPORT</text>
+  <text x="520" y="284" text-anchor="middle" font-family="system-ui" font-size="9" fill="#e2e8f0" opacity="0.6">SCHEDULE</text>
+  <!-- Waveform -->
+  <g transform="translate(320, 330)" opacity="0.5">
+    <rect x="0" y="10" width="4" height="20" rx="2" fill="url(#accent3)"/>
+    <rect x="10" y="5" width="4" height="30" rx="2" fill="url(#accent3)"/>
+    <rect x="20" y="0" width="4" height="40" rx="2" fill="url(#accent3)"/>
+    <rect x="30" y="8" width="4" height="24" rx="2" fill="url(#accent3)"/>
+    <rect x="40" y="3" width="4" height="34" rx="2" fill="url(#accent3)"/>
+    <rect x="50" y="12" width="4" height="16" rx="2" fill="url(#accent3)"/>
+    <rect x="60" y="6" width="4" height="28" rx="2" fill="url(#accent3)"/>
+    <rect x="70" y="2" width="4" height="36" rx="2" fill="url(#accent3)"/>
+    <rect x="80" y="9" width="4" height="22" rx="2" fill="url(#accent3)"/>
+    <rect x="90" y="4" width="4" height="32" rx="2" fill="url(#accent3)"/>
+    <rect x="100" y="11" width="4" height="18" rx="2" fill="url(#accent3)"/>
+    <rect x="110" y="7" width="4" height="26" rx="2" fill="url(#accent3)"/>
+    <rect x="120" y="1" width="4" height="38" rx="2" fill="url(#accent3)"/>
+    <rect x="130" y="10" width="4" height="20" rx="2" fill="url(#accent3)"/>
+    <rect x="140" y="5" width="4" height="30" rx="2" fill="url(#accent3)"/>
+  </g>
+  <text x="400" y="420" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8" letter-spacing="3">AI BUSINESS AUTOMATION</text>
+</svg>

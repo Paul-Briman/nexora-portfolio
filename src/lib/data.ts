@@ -1,26 +1,18 @@
 import {
   Code2,
   Server,
-  Database,
-  Cloud,
-  Layout,
-  Paintbrush,
-  FileCode,
-  Braces,
-  Atom,
-  Frame,
-  Component,
-  ServerCog,
   Globe,
   ShieldCheck,
-  HardDrive,
-  Cloudy,
-  GitBranch,
-  Plug,
   Gauge,
-  Mail,
+  Paintbrush,
+  Zap,
+  Bot,
+  Layers,
+  ArrowUpRight,
   type LucideIcon,
 } from "lucide-react";
+
+// ===== Navigation =====
 
 export interface NavItem {
   label: string;
@@ -29,99 +21,75 @@ export interface NavItem {
 
 export const navItems: NavItem[] = [
   { label: "Home", href: "#home" },
+  { label: "Services", href: "#services" },
+  { label: "Work", href: "#work" },
   { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
-  { label: "Value", href: "#value" },
+  { label: "Why Us", href: "#why-us" },
   { label: "Contact", href: "#contact" },
 ];
 
-export interface Skill {
-  name: string;
-  icon: LucideIcon;
-}
+// ===== Services =====
 
-export interface SkillCategory {
+export interface Service {
   title: string;
+  description: string;
   icon: LucideIcon;
-  skills: Skill[];
 }
 
-export const skillCategories: SkillCategory[] = [
+export const services: Service[] = [
   {
-    title: "Frontend",
-    icon: Layout,
-    skills: [
-      { name: "HTML5", icon: FileCode },
-      { name: "CSS3", icon: Paintbrush },
-      { name: "Tailwind CSS", icon: Paintbrush },
-      { name: "JavaScript (ES6+)", icon: Braces },
-      { name: "TypeScript", icon: Code2 },
-      { name: "React", icon: Atom },
-      { name: "Framer Motion", icon: Frame },
-      { name: "shadcn/ui", icon: Component },
-    ],
+    title: "Web Development",
+    description:
+      "High-performance websites and landing pages built for speed, SEO, and conversion. Pixel-perfect, responsive, and optimized for every device.",
+    icon: Globe,
   },
   {
-    title: "Backend",
+    title: "Full-Stack Applications",
+    description:
+      "End-to-end web applications with modern frontend frameworks, robust backends, and seamless database integration. Built to scale with your business.",
+    icon: Layers,
+  },
+  {
+    title: "API & Backend Systems",
+    description:
+      "Secure, scalable REST APIs and backend architectures with authentication, data pipelines, and third-party integrations that power your products.",
     icon: Server,
-    skills: [
-      { name: "Node.js", icon: ServerCog },
-      { name: "Express.js", icon: Globe },
-      { name: "PHP", icon: FileCode },
-      { name: "JWT Auth", icon: ShieldCheck },
-    ],
   },
   {
-    title: "Databases",
-    icon: Database,
-    skills: [
-      { name: "PostgreSQL", icon: HardDrive },
-      { name: "MySQL", icon: HardDrive },
-      { name: "MongoDB", icon: HardDrive },
-    ],
-  },
-  {
-    title: "Cloud & Tools",
-    icon: Cloud,
-    skills: [
-      { name: "Cloudinary", icon: Cloudy },
-      { name: "Supabase", icon: Database },
-      { name: "Git & GitHub", icon: GitBranch },
-      { name: "REST APIs", icon: Plug },
-      { name: "Web Performance", icon: Gauge },
-      { name: "Resend", icon: Mail },
-    ],
+    title: "AI & Automation",
+    description:
+      "Intelligent business automation systems including AI-powered workflows, voice agents, and process optimization that save time and reduce costs.",
+    icon: Bot,
   },
 ];
 
-export interface Project {
+// ===== Featured Work =====
+
+export interface WorkProject {
   title: string;
   description: string;
   highlights?: string[];
-  impact?: string[];
+  results?: string[];
   techStack: string[];
-  github: string;
-  live: string;
+  live?: string;
   featured?: boolean;
 }
 
-export const projects: Project[] = [
+export const workProjects: WorkProject[] = [
   {
     title: "Lumina \u2013 Photography Platform",
     description:
-      "A full-stack photography platform inspired by Pixieset, built to help photographers worldwide deliver secure client galleries, manage downloads, and generate professional invoices.",
+      "A full-stack photography platform helping photographers worldwide deliver secure client galleries, manage downloads, and generate professional invoices \u2014 all from one system.",
     highlights: [
-      "PIN-protected client galleries",
-      "Smart cross-device downloads (iOS ZIP handling, optimized Android/desktop delivery)",
-      "Invoice generator with currency + discount support",
-      "Dark/light mode theming",
-      "Image protection (disable right-click & long-press)",
+      "PIN-protected client galleries with secure delivery",
+      "Smart cross-device downloads (iOS, Android, desktop)",
+      "Built-in invoice generator with multi-currency support",
+      "Image protection and dark/light mode theming",
     ],
-    impact: [
-      "Production-ready platform for photographers globally",
-      "Solves real delivery, security, and workflow problems",
-      "Handles complex cross-device challenges",
+    results: [
+      "Production platform serving photographers globally",
+      "Solves real-world delivery, security, and invoicing challenges",
+      "Handles complex cross-device file delivery at scale",
     ],
     techStack: [
       "React",
@@ -130,90 +98,83 @@ export const projects: Project[] = [
       "Node.js",
       "Express",
       "PostgreSQL",
-      "Supabase",
       "Cloudinary",
       "JWT",
-      "Resend",
     ],
-    github: "https://github.com/Paul-Briman/lumina-photography",
     live: "https://luminashots.com",
     featured: true,
   },
   {
-    title: "CryptoVault \u2013 Investment Platform",
+    title: "CryptoVault \u2013 Investment Dashboard",
     description:
-      "A crypto investment dashboard featuring real-time portfolio tracking, investment plans, and analytics. Built with a focus on clean data visualization and secure transactions.",
+      "A real-time crypto investment platform with portfolio tracking, plan management, and clean data visualization \u2014 built for financial clarity and secure transactions.",
     techStack: ["React", "Node.js", "Express", "PostgreSQL", "JWT", "REST API"],
-    github: "https://github.com/Paul-Briman",
-    live: "#",
   },
   {
     title: "VoxAgent \u2013 AI Business Automation",
     description:
-      "An AI-powered business automation platform featuring intelligent voice agents for customer support, lead qualification, and appointment scheduling.",
+      "An AI-powered automation platform with intelligent voice agents for customer support, lead qualification, and appointment scheduling \u2014 reducing manual overhead for businesses.",
     techStack: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "REST API"],
-    github: "https://github.com/Paul-Briman",
-    live: "#",
   },
   {
-    title: "AdminCore \u2013 Dashboard System",
+    title: "AdminCore \u2013 Enterprise Dashboard",
     description:
-      "A comprehensive admin dashboard with role-based access control, real-time analytics, and modular widget system. Designed for scalability and performance.",
+      "A modular admin system with role-based access control, real-time analytics widgets, and a scalable architecture \u2014 designed for multi-tenant business environments.",
     techStack: ["React", "TypeScript", "Tailwind", "Node.js", "PostgreSQL", "JWT"],
-    github: "https://github.com/Paul-Briman",
-    live: "#",
-  },
-  {
-    title: "RESTify \u2013 API Service",
-    description:
-      "A robust REST API service with comprehensive documentation, rate limiting, authentication, and automated testing. Built following best practices for scalable API architecture.",
-    techStack: ["Node.js", "Express", "PostgreSQL", "JWT", "REST API"],
-    github: "https://github.com/Paul-Briman",
-    live: "#",
   },
 ];
 
-export interface ValueItem {
+// ===== Why Choose Us =====
+
+export interface WhyUsItem {
   title: string;
   description: string;
   icon: LucideIcon;
 }
 
-export const valueItems: ValueItem[] = [
+export const whyUsItems: WhyUsItem[] = [
   {
-    title: "Scalable Backend Systems",
+    title: "Scalable Architecture",
     description:
-      "Architecting server-side solutions built to grow \u2014 from RESTful APIs to database design, every layer is built for scale.",
-    icon: Server,
+      "Every system we build is architected for growth \u2014 from database design to API layers, your product scales effortlessly as your business expands.",
+    icon: ArrowUpRight,
   },
   {
-    title: "Performance-Focused Development",
+    title: "Performance-First Builds",
     description:
-      "Every millisecond matters. Optimized rendering, lazy loading, and efficient data fetching for blazing-fast applications.",
+      "Sub-second load times, optimized rendering, and efficient data pipelines. We obsess over performance so your users never wait.",
     icon: Gauge,
   },
   {
-    title: "Secure Authentication Flows",
+    title: "Secure Systems",
     description:
-      "Implementing JWT-based auth, role-based access control, and security best practices to protect user data.",
+      "Enterprise-grade security with JWT authentication, role-based access control, encrypted data, and security best practices built into every layer.",
     icon: ShieldCheck,
   },
   {
-    title: "Clean UI/UX Systems",
+    title: "Clean UI/UX",
     description:
-      "Pixel-perfect interfaces with intuitive user flows. Responsive, accessible, and visually polished designs.",
+      "Interfaces that convert. We craft intuitive, responsive designs that look stunning and guide users naturally toward your business goals.",
     icon: Paintbrush,
   },
   {
-    title: "Real-World Problem Solving",
+    title: "Production-Ready Code",
     description:
-      "Building solutions that address actual business needs \u2014 from cross-device file delivery to automated invoicing.",
+      "No prototypes or half-built systems. Everything we deliver is tested, documented, and ready for real-world usage from day one.",
     icon: Code2,
   },
+  {
+    title: "Fast Delivery",
+    description:
+      "We move fast without cutting corners. Efficient workflows and modern tooling mean your project ships on time without sacrificing quality.",
+    icon: Zap,
+  },
 ];
+
+// ===== Social / Company Links =====
 
 export const socialLinks = {
   github: "https://github.com/Paul-Briman",
   linkedin: "https://linkedin.com/in/briman-paul",
-  email: "mailto:contact@brimanpaul.dev",
+  email: "mailto:hello@nexora.dev",
 };

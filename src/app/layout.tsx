@@ -13,30 +13,33 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Briman Paul | Full Stack Developer — Nexora",
+  title: "Nexora — Scalable Digital Systems for Modern Businesses",
   description:
-    "Full Stack Developer building scalable, high-performance web applications. Specializing in React, TypeScript, Node.js, and modern web technologies.",
+    "Nexora is a digital agency that designs and develops high-performance web applications, backend systems, and business automation for startups and enterprises worldwide.",
   keywords: [
-    "Briman Paul",
-    "Full Stack Developer",
+    "Nexora",
+    "digital agency",
+    "web development",
+    "full-stack applications",
+    "API development",
+    "business automation",
     "React",
-    "TypeScript",
     "Node.js",
-    "Portfolio",
-    "Web Developer",
+    "TypeScript",
   ],
-  authors: [{ name: "Briman Paul" }],
+  authors: [{ name: "Nexora" }],
   openGraph: {
-    title: "Briman Paul | Full Stack Developer — Nexora",
+    title: "Nexora — Scalable Digital Systems for Modern Businesses",
     description:
-      "Full Stack Developer building scalable, high-performance web applications.",
+      "We design and develop high-performance web applications for startups, businesses, and entrepreneurs worldwide.",
     type: "website",
+    siteName: "Nexora",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Briman Paul | Full Stack Developer",
+    title: "Nexora — Scalable Digital Systems",
     description:
-      "Full Stack Developer building scalable, high-performance web applications.",
+      "High-performance web applications, backend systems, and business automation for modern businesses.",
   },
 };
 

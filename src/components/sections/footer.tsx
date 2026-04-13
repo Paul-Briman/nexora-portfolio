@@ -8,17 +8,19 @@ export function Footer() {
   return (
     <footer className="relative py-12 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Row 1 */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+          {/* Left — Brand */}
           <div>
             <a href="#home" className="text-xl font-bold text-gradient">
               Nexora
             </a>
             <p className="text-sm text-[--color-muted] mt-1">
-              &copy; {new Date().getFullYear()} Briman Paul. All rights
-              reserved.
+              Scalable digital systems for modern businesses
             </p>
           </div>
 
+          {/* Right — Social Icons */}
           <div className="flex items-center gap-4">
             <a
               href={socialLinks.github}
@@ -48,6 +50,16 @@ export function Footer() {
               <Mail size={18} />
             </a>
           </div>
+        </div>
+
+        {/* Row 2 */}
+        <div className="mt-8 pt-8 border-t border-white/5 text-center">
+          <p className="text-sm text-[--color-muted]">
+            &copy; 2026 Nexora. All rights reserved.
+          </p>
+          <p className="text-xs text-[--color-muted]/50 mt-2">
+            Built with precision. Shipped with confidence.
+          </p>
         </div>
       </div>
     </footer>

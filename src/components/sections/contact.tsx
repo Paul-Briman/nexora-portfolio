@@ -1,7 +1,15 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { Send, Loader2, CheckCircle2, AlertCircle, Mail, MapPin, Globe } from "lucide-react";
+import {
+  Send,
+  Loader2,
+  CheckCircle2,
+  AlertCircle,
+  Mail,
+  MapPin,
+  Globe,
+} from "lucide-react";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Button } from "@/components/ui/button";
 
@@ -39,33 +47,47 @@ export function ContactSection() {
 
   return (
     <section id="contact" className="py-24 relative">
+      {/* Gradient line separator */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[--color-secondary]/20 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          title="Get In Touch"
-          subtitle="Have a project in mind? Let's build something great together."
+          title="Let's Build Something Powerful"
+          subtitle="Ready to bring your project to life? Tell us what you need."
         />
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          {/* Left column — Info */}
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-white mb-4">
-                Let&apos;s work together
+                Start a Project
               </h3>
               <p className="text-[--color-muted] leading-relaxed">
-                I&apos;m always open to discussing new projects, creative ideas,
-                or opportunities to be part of your vision. Whether you need a
-                full-stack application, a polished frontend, or a robust API —
-                let&apos;s connect.
+                We&apos;re ready to discuss your next project, whether it&apos;s
+                a full-stack application, a high-performance website, or a
+                custom API. Tell us what you need and we&apos;ll bring it to
+                life with scalable, production-ready code.
               </p>
             </div>
 
             <div className="space-y-4">
               {[
-                { icon: Mail, label: "Email", value: "contact@brimanpaul.dev" },
-                { icon: MapPin, label: "Location", value: "Available Worldwide" },
-                { icon: Globe, label: "Website", value: "brimanpaul.dev" },
+                {
+                  icon: Mail,
+                  label: "Email",
+                  value: "hello@nexora.dev",
+                },
+                {
+                  icon: MapPin,
+                  label: "Location",
+                  value: "Available Worldwide",
+                },
+                {
+                  icon: Globe,
+                  label: "Website",
+                  value: "nexora.dev",
+                },
               ].map((info) => (
                 <div
                   key={info.label}
@@ -85,6 +107,7 @@ export function ContactSection() {
             </div>
           </div>
 
+          {/* Right column — Form */}
           <div>
             <form
               onSubmit={handleSubmit}
@@ -146,7 +169,7 @@ export function ContactSection() {
                     setFormData({ ...formData, message: e.target.value })
                   }
                   className="w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/10 text-white placeholder-[--color-muted]/40 focus:outline-none focus:border-[--color-primary]/50 focus:ring-1 focus:ring-[--color-primary]/20 transition-all resize-none"
-                  placeholder="Tell me about your project..."
+                  placeholder="Tell us about your project..."
                 />
               </div>
 
@@ -181,13 +204,13 @@ export function ContactSection() {
 
               {status === "success" && (
                 <p className="text-sm text-green-400 text-center">
-                  Thanks! I&apos;ll get back to you soon.
+                  Thanks! We&apos;ll get back to you soon.
                 </p>
               )}
 
               {status === "error" && (
                 <p className="text-sm text-red-400 text-center">
-                  Something went wrong. Please try again or email me directly.
+                  Something went wrong. Please try again or email us directly.
                 </p>
               )}
             </form>

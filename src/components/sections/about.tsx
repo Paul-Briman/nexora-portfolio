@@ -1,32 +1,32 @@
 "use client";
 
-import { Award, Zap, Target, Code2 } from "lucide-react";
+import { Rocket, Users, Globe, Code2 } from "lucide-react";
 import { SectionHeading } from "@/components/ui/section-heading";
 
 const highlights = [
   {
+    icon: Rocket,
+    title: "Mission-Driven",
+    description:
+      "We build for impact — every line of code solves a real business problem.",
+  },
+  {
+    icon: Users,
+    title: "Client-Focused",
+    description:
+      "Your goals drive our architecture decisions. We build what your business needs.",
+  },
+  {
+    icon: Globe,
+    title: "Global Reach",
+    description:
+      "We serve clients worldwide, from local startups to international brands.",
+  },
+  {
     icon: Code2,
-    title: "Full Stack Development",
+    title: "Modern Stack",
     description:
-      "End-to-end application development from responsive frontends to scalable backend architectures.",
-  },
-  {
-    icon: Target,
-    title: "Problem Solver",
-    description:
-      "Turning complex business requirements into clean, efficient, and maintainable code.",
-  },
-  {
-    icon: Zap,
-    title: "Performance Driven",
-    description:
-      "Building fast, optimized applications with a focus on user experience and Core Web Vitals.",
-  },
-  {
-    icon: Award,
-    title: "Certified Developer",
-    description:
-      "Responsive Web Design & JavaScript Algorithms and Data Structures certified.",
+      "React, Node.js, TypeScript, PostgreSQL — we use the tools that perform.",
   },
 ];
 
@@ -35,31 +35,32 @@ export function AboutSection() {
     <section id="about" className="py-24 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          title="About Me"
-          subtitle="Building the future of the web, one application at a time"
+          title="About Nexora"
+          subtitle="A modern digital agency solving real business problems"
         />
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
+          {/* Left column - text */}
           <div className="space-y-6">
             <p className="text-lg text-[--color-muted] leading-relaxed">
-              I&apos;m a full-stack developer passionate about building
-              real-world, scalable web applications that solve genuine problems.
-              My approach combines clean architecture with performance-first
-              development to deliver products that users love.
+              Nexora is a digital agency that builds scalable web applications
+              and backend systems for startups, businesses, and entrepreneurs.
+              We don&apos;t build templates — we engineer custom solutions
+              tailored to each client&apos;s unique challenges.
             </p>
             <p className="text-lg text-[--color-muted] leading-relaxed">
-              From designing responsive interfaces with React and Tailwind CSS
-              to architecting robust backend systems with Node.js and
-              PostgreSQL, I bring ideas to life with code that&apos;s both
-              elegant and efficient.
+              From responsive frontends to robust API architectures, we handle
+              every layer of the stack. Our focus is on performance, security,
+              and clean design that drives real business results.
             </p>
             <p className="text-lg text-[--color-muted] leading-relaxed">
-              Certified in Responsive Web Design and JavaScript Algorithms &
-              Data Structures, I&apos;m committed to continuous learning and
-              staying ahead in the ever-evolving tech landscape.
+              Based on a philosophy of quality over quantity, we take on select
+              projects and deliver systems that are production-ready from day
+              one — built to grow with your business.
             </p>
           </div>
 
+          {/* Right column - 2x2 grid */}
           <div className="grid sm:grid-cols-2 gap-4">
             {highlights.map((item) => (
               <div

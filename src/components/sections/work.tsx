@@ -2,13 +2,13 @@
 
 import { ExternalLink, Star, CheckCircle2, TrendingUp } from "lucide-react";
 import { GithubIcon } from "@/components/ui/icons";
-import { projects } from "@/lib/data";
+import { workProjects } from "@/lib/data";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Button } from "@/components/ui/button";
 import { GlowCard } from "@/components/ui/glow-card";
 
 function FeaturedProject() {
-  const project = projects.find((p) => p.featured);
+  const project = workProjects.find((p) => p.featured);
   if (!project) return null;
 
   return (
@@ -23,6 +23,7 @@ function FeaturedProject() {
       <div className="glass-card rounded-3xl overflow-hidden gradient-border">
         <div className="p-8 md:p-10">
           <div className="flex flex-col lg:flex-row gap-8">
+            {/* Left column */}
             <div className="flex-1 space-y-6">
               <h3 className="text-3xl md:text-4xl font-bold text-gradient">
                 {project.title}
@@ -64,29 +65,31 @@ function FeaturedProject() {
                 ))}
               </div>
 
-              <div className="flex gap-3 pt-2">
-                <Button href={project.live} size="md">
-                  <ExternalLink size={18} />
-                  Live Site
-                </Button>
-                <Button href={project.github} variant="outline" size="md">
-                  <GithubIcon size={18} />
-                  Source Code
-                </Button>
-              </div>
+              {project.live && (
+                <div className="flex gap-3 pt-2">
+                  <Button href={project.live} size="md">
+                    <ExternalLink size={18} />
+                    View Live
+                  </Button>
+                </div>
+              )}
             </div>
 
-            {project.impact && (
+            {/* Right column - Results */}
+            {project.results && (
               <div className="lg:w-80 space-y-4">
                 <div className="glass rounded-2xl p-6 space-y-4">
                   <div className="flex items-center gap-2">
-                    <TrendingUp size={18} className="text-[--color-secondary]" />
+                    <TrendingUp
+                      size={18}
+                      className="text-[--color-secondary]"
+                    />
                     <h4 className="text-sm font-semibold uppercase tracking-wider text-[--color-secondary]">
-                      Impact
+                      Results
                     </h4>
                   </div>
                   <ul className="space-y-3">
-                    {project.impact.map((item) => (
+                    {project.results.map((item) => (
                       <li
                         key={item}
                         className="flex items-start gap-2 text-sm text-[--color-muted]"
@@ -106,7 +109,11 @@ function FeaturedProject() {
   );
 }
 
-function ProjectCard({ project }: { project: (typeof projects)[0] }) {
+function WorkProjectCard({
+  project,
+}: {
+  project: (typeof workProjects)[0];
+}) {
   return (
     <GlowCard className="flex flex-col h-full">
       <h3 className="text-xl font-bold text-white mb-3">{project.title}</h3>
@@ -126,43 +133,38 @@ function ProjectCard({ project }: { project: (typeof projects)[0] }) {
       </div>
 
       <div className="flex gap-3 mt-auto">
-        <a
-          href={project.live}
-          className="flex items-center gap-1.5 text-sm text-[--color-primary] hover:text-white transition-colors"
-        >
-          <ExternalLink size={14} />
-          Live Demo
-        </a>
-        <a
-          href={project.github}
-          className="flex items-center gap-1.5 text-sm text-[--color-muted] hover:text-white transition-colors"
-        >
-          <GithubIcon size={14} />
-          GitHub
-        </a>
+        {project.live && (
+          <a
+            href={project.live}
+            className="flex items-center gap-1.5 text-sm text-[--color-primary] hover:text-white transition-colors"
+          >
+            <ExternalLink size={14} />
+            View Project
+          </a>
+        )}
       </div>
     </GlowCard>
   );
 }
 
-export function ProjectsSection() {
-  const otherProjects = projects.filter((p) => !p.featured);
+export function WorkSection() {
+  const otherProjects = workProjects.filter((p) => !p.featured);
 
   return (
-    <section id="projects" className="py-24 relative">
+    <section id="work" className="py-24 relative">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[--color-secondary]/20 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          title="Projects"
-          subtitle="Real-world applications built with modern technologies"
+          title="Our Work"
+          subtitle="Real-world applications built for real businesses"
         />
 
         <FeaturedProject />
 
         <div className="grid md:grid-cols-2 gap-6">
           {otherProjects.map((project) => (
-            <ProjectCard key={project.title} project={project} />
+            <WorkProjectCard key={project.title} project={project} />
           ))}
         </div>
       </div>

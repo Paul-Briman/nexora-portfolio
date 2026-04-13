@@ -44,10 +44,11 @@ export function Navbar() {
           className="hover:opacity-80 transition-opacity flex-shrink-0"
         >
           <Image
-            src="/images/nexora-logo.svg"
-            alt="Nexora"
-            width={140}
-            height={36}
+            src="/images/nexora-logo.png"
+            alt="Nexora Logo"
+            width={160}
+            height={40}
+            className="h-10 w-auto object-contain"
             priority
           />
         </a>

@@ -15,10 +15,11 @@ export function Footer() {
           <div>
             <a href="#home" className="inline-block hover:opacity-80 transition-opacity">
               <Image
-                src="/images/nexora-logo.svg"
-                alt="Nexora"
-                width={120}
-                height={32}
+                src="/images/nexora-logo.png"
+                alt="Nexora Logo"
+                width={130}
+                height={34}
+                className="h-8 w-auto object-contain"
               />
             </a>
             <p className="text-sm text-[--color-muted] mt-1">

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Mail } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/icons";
 import { socialLinks } from "@/lib/data";
@@ -12,8 +13,13 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Left — Brand */}
           <div>
-            <a href="#home" className="text-xl font-bold text-gradient">
-              Nexora
+            <a href="#home" className="inline-block hover:opacity-80 transition-opacity">
+              <Image
+                src="/images/nexora-logo.svg"
+                alt="Nexora"
+                width={120}
+                height={32}
+              />
             </a>
             <p className="text-sm text-[--color-muted] mt-1">
               Scalable digital systems for modern businesses

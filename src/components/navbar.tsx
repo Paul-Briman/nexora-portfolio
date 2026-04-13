@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { navItems } from "@/lib/data";
 import { cn } from "@/lib/utils";
@@ -40,9 +41,15 @@ export function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <a
           href="#home"
-          className="text-2xl font-bold text-gradient hover:opacity-80 transition-opacity"
+          className="hover:opacity-80 transition-opacity flex-shrink-0"
         >
-          Nexora
+          <Image
+            src="/images/nexora-logo.svg"
+            alt="Nexora"
+            width={140}
+            height={36}
+            priority
+          />
         </a>
 
         <ul className="hidden md:flex items-center gap-1">

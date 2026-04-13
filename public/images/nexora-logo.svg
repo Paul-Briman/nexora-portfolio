@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40">
+  <defs>
+    <linearGradient id="nGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#38bdf8" />
+      <stop offset="30%" style="stop-color:#3b82f6" />
+      <stop offset="70%" style="stop-color:#6366f1" />
+      <stop offset="100%" style="stop-color:#8b5cf6" />
+    </linearGradient>
+  </defs>
+  <!-- Stylized N icon -->
+  <g transform="translate(2, 4) scale(0.85)">
+    <!-- Left stroke of N going up-right -->
+    <path d="M2 36 L2 6 Q2 4 4 4 L6 4 Q8 4 9 6 L22 26 Q23 28 24 26 L24 6 Q24 4 26 4 L28 4 Q30 4 30 6 L30 36"
+          fill="none" stroke="url(#nGrad)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- NEXORA wordmark -->
+  <text x="38" y="28" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, sans-serif"
+        font-size="20" font-weight="700" letter-spacing="3.5" fill="white">
+    NEXORA
+  </text>
+</svg>

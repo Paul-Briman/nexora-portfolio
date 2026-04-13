@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600">
+  <defs>
+    <linearGradient id="fbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a0533;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="faccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0" />
+    </radialGradient>
+    <clipPath id="avatarClip">
+      <circle cx="250" cy="240" r="120" />
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="600" fill="url(#fbg)" />
+
+  <!-- Ambient glow -->
+  <circle cx="250" cy="240" r="250" fill="url(#glow1)" />
+  <circle cx="180" cy="180" r="180" fill="#3b82f6" opacity="0.04" />
+  <circle cx="320" cy="320" r="160" fill="#8b5cf6" opacity="0.04" />
+
+  <!-- Decorative rings -->
+  <circle cx="250" cy="240" r="155" fill="none" stroke="url(#faccent)" stroke-width="0.8" opacity="0.15" stroke-dasharray="6 4" />
+  <circle cx="250" cy="240" r="180" fill="none" stroke="#3b82f6" stroke-width="0.5" opacity="0.08" />
+
+  <!-- Avatar circle background -->
+  <circle cx="250" cy="240" r="122" fill="url(#faccent)" opacity="0.15" />
+  <circle cx="250" cy="240" r="120" fill="#111827" />
+
+  <!-- Person silhouette -->
+  <g clip-path="url(#avatarClip)">
+    <rect x="130" y="120" width="240" height="240" fill="#111827" />
+    <!-- Head -->
+    <circle cx="250" cy="210" r="52" fill="#1e293b" />
+    <!-- Shoulders -->
+    <ellipse cx="250" cy="340" rx="85" ry="60" fill="#1e293b" />
+  </g>
+
+  <!-- Avatar ring -->
+  <circle cx="250" cy="240" r="120" fill="none" stroke="url(#faccent)" stroke-width="2.5" opacity="0.6" />
+
+  <!-- Name & title -->
+  <text x="250" y="420" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#e2e8f0">Briman Paul</text>
+  <text x="250" y="452" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500" fill="#8b5cf6" letter-spacing="1.5">FOUNDER &amp; DEVELOPER</text>
+
+  <!-- Decorative dots -->
+  <circle cx="130" cy="420" r="3" fill="#3b82f6" opacity="0.2" />
+  <circle cx="370" cy="420" r="3" fill="#8b5cf6" opacity="0.2" />
+  <circle cx="120" cy="160" r="2" fill="#3b82f6" opacity="0.15" />
+  <circle cx="380" cy="160" r="2" fill="#8b5cf6" opacity="0.15" />
+  <circle cx="100" cy="300" r="2.5" fill="#3b82f6" opacity="0.12" />
+  <circle cx="400" cy="300" r="2.5" fill="#8b5cf6" opacity="0.12" />
+
+  <!-- Bottom gradient line -->
+  <rect x="175" y="475" width="150" height="2" rx="1" fill="url(#faccent)" opacity="0.3" />
+</svg>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Mail } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/icons";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -16,49 +17,73 @@ export function FounderSection() {
           subtitle="The mind behind Nexora"
         />
 
-        <div className="max-w-3xl mx-auto">
-          <div className="glass-card rounded-3xl p-8 md:p-12 gradient-border text-center">
-            <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-[--color-primary] to-[--color-secondary] flex items-center justify-center">
-              <span className="text-2xl font-bold text-white">BP</span>
-            </div>
+        <div className="max-w-5xl mx-auto">
+          <div className="glass-card rounded-3xl p-8 md:p-12 gradient-border">
+            {/* 2-column layout: image left, text right */}
+            <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-12">
+              {/* Left — Image with gradient glow */}
+              <div className="flex-shrink-0">
+                <div
+                  className="rounded-2xl p-1.5"
+                  style={{
+                    background:
+                      "radial-gradient(circle, rgba(139,92,246,0.15), transparent)",
+                  }}
+                >
+                  <div className="relative w-64 h-72 sm:w-72 sm:h-80 rounded-2xl overflow-hidden shadow-lg group">
+                    <Image
+                      src="/images/founder.svg"
+                      alt="Briman Paul — Founder of Nexora"
+                      fill
+                      className="object-cover transition-transform duration-300 ease-out group-hover:scale-105"
+                    />
+                  </div>
+                </div>
+              </div>
 
-            <h3 className="text-2xl font-bold text-white mt-6">
-              Briman Paul
-            </h3>
-            <p className="text-[--color-primary] font-medium">
-              Founder &amp; Full Stack Developer
-            </p>
+              {/* Right — Text content */}
+              <div className="text-center lg:text-left flex-1">
+                <h3 className="text-3xl font-bold text-white">Briman Paul</h3>
+                <p className="text-[--color-primary] font-semibold mt-1 text-lg">
+                  Founder &amp; Full Stack Developer
+                </p>
 
-            <p className="text-[--color-muted] mt-4 leading-relaxed max-w-xl mx-auto">
-              Focused on building scalable systems and solving real-world
-              problems with modern technologies. Briman founded Nexora to help
-              businesses ship faster, build smarter, and grow with confidence
-              through technology that works.
-            </p>
+                <p className="text-[--color-muted] mt-5 leading-relaxed text-base max-w-xl">
+                  Briman leads Nexora with a focus on building scalable,
+                  high-performance digital systems that solve real-world
+                  business problems. His expertise spans modern web
+                  technologies, backend architecture, and user-focused design.
+                </p>
 
-            <div className="flex gap-4 justify-center mt-6">
-              <a
-                href={socialLinks.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-white/5 hover:bg-[--color-primary]/10 flex items-center justify-center text-[--color-muted] hover:text-[--color-primary] transition-all"
-              >
-                <GithubIcon size={20} />
-              </a>
-              <a
-                href={socialLinks.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-white/5 hover:bg-[--color-primary]/10 flex items-center justify-center text-[--color-muted] hover:text-[--color-primary] transition-all"
-              >
-                <LinkedinIcon size={20} />
-              </a>
-              <a
-                href={socialLinks.email}
-                className="w-10 h-10 rounded-lg bg-white/5 hover:bg-[--color-primary]/10 flex items-center justify-center text-[--color-muted] hover:text-[--color-primary] transition-all"
-              >
-                <Mail size={20} />
-              </a>
+                {/* Social links */}
+                <div className="flex gap-3 mt-7 justify-center lg:justify-start">
+                  <a
+                    href={socialLinks.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                    className="w-10 h-10 rounded-lg bg-white/5 hover:bg-[--color-primary]/10 flex items-center justify-center text-[--color-muted] hover:text-[--color-primary] transition-all duration-300 hover:scale-110"
+                  >
+                    <GithubIcon size={20} />
+                  </a>
+                  <a
+                    href={socialLinks.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                    className="w-10 h-10 rounded-lg bg-white/5 hover:bg-[--color-primary]/10 flex items-center justify-center text-[--color-muted] hover:text-[--color-primary] transition-all duration-300 hover:scale-110"
+                  >
+                    <LinkedinIcon size={20} />
+                  </a>
+                  <a
+                    href={socialLinks.email}
+                    aria-label="Email"
+                    className="w-10 h-10 rounded-lg bg-white/5 hover:bg-[--color-primary]/10 flex items-center justify-center text-[--color-muted] hover:text-[--color-primary] transition-all duration-300 hover:scale-110"
+                  >
+                    <Mail size={20} />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

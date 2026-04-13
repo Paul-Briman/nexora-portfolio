@@ -53,22 +53,34 @@ export function Navbar() {
           />
         </a>
 
-        <ul className="hidden md:flex items-center gap-1">
-          {navItems.map((item) => (
-            <li key={item.href}>
-              <a
-                href={item.href}
-                className={cn(
-                  "px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300",
-                  activeSection === item.href.replace("#", "")
-                    ? "text-white bg-gradient-to-r from-[--color-primary]/20 to-[--color-secondary]/20"
-                    : "text-[--color-muted] hover:text-white hover:bg-white/5"
-                )}
-              >
-                {item.label}
-              </a>
-            </li>
-          ))}
+        <ul className="hidden md:flex items-center gap-2">
+          {navItems.map((item) => {
+            const isActive = activeSection === item.href.replace("#", "");
+            return (
+              <li key={item.href}>
+                <a
+                  href={item.href}
+                  className={cn(
+                    "relative group px-4 py-2 text-sm font-medium transition-colors duration-200",
+                    isActive
+                      ? "text-white"
+                      : "text-gray-300 hover:text-white"
+                  )}
+                >
+                  {item.label}
+                  {/* Gradient underline */}
+                  <span
+                    className={cn(
+                      "absolute left-0 -bottom-1 h-[2px] bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-300 ease-out",
+                      isActive
+                        ? "w-full opacity-100"
+                        : "w-0 opacity-70 group-hover:w-full group-hover:opacity-100"
+                    )}
+                  />
+                </a>
+              </li>
+            );
+          })}
         </ul>
 
         <button

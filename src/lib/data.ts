@@ -71,6 +71,7 @@ export interface WorkProject {
   description: string;
   image: string;
   gradient: string;
+  status?: string;
   highlights?: string[];
   results?: string[];
   techStack: string[];
@@ -111,34 +112,34 @@ export const workProjects: WorkProject[] = [
     featured: true,
   },
   {
-    title: "CryptoVault",
-    subtitle: "Investment Dashboard",
+    title: "Client Portal",
+    subtitle: "Client Management",
     description:
-      "Real-time portfolio tracking, investment plans, and clean data visualization for financial clarity.",
+      "A secure client management portal focused on onboarding, communication, and streamlined project workflows.",
     image: "/images/cryptovault.svg",
-    gradient: "from-emerald-600/20 via-teal-600/20 to-cyan-600/20",
-    techStack: ["React", "Node.js", "Express", "PostgreSQL", "JWT", "REST API"],
-    github: "https://github.com/Paul-Briman",
+    gradient: "from-blue-600/20 via-indigo-600/20 to-violet-600/20",
+    status: "In Development",
+    techStack: ["React", "TypeScript", "Node.js", "PostgreSQL", "Tailwind"],
   },
   {
-    title: "VoxAgent",
-    subtitle: "AI Business Automation",
+    title: "AI Outreach Engine",
+    subtitle: "Automation System",
     description:
-      "Intelligent voice agents for customer support, lead qualification, and appointment scheduling.",
+      "An automation system designed to help businesses scale lead generation and customer outreach efficiently.",
     image: "/images/voxagent.svg",
-    gradient: "from-violet-600/20 via-fuchsia-600/20 to-pink-600/20",
-    techStack: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "REST API"],
-    github: "https://github.com/Paul-Briman",
+    gradient: "from-violet-600/20 via-purple-600/20 to-fuchsia-600/20",
+    status: "Internal Build",
+    techStack: ["Node.js", "OpenAI API", "React", "MongoDB", "REST API"],
   },
   {
-    title: "AdminCore",
-    subtitle: "Enterprise Dashboard",
+    title: "Admin Operations Dashboard",
+    subtitle: "Internal Dashboard",
     description:
-      "Role-based access, real-time analytics, and modular widgets for multi-tenant business environments.",
+      "An internal dashboard built for managing operations, analytics, and business workflows in one place.",
     image: "/images/admincore.svg",
-    gradient: "from-amber-600/20 via-orange-600/20 to-red-600/20",
-    techStack: ["React", "TypeScript", "Tailwind", "Node.js", "PostgreSQL", "JWT"],
-    github: "https://github.com/Paul-Briman",
+    gradient: "from-slate-600/20 via-blue-600/20 to-indigo-600/20",
+    status: "Private Project",
+    techStack: ["React", "TypeScript", "Node.js", "PostgreSQL", "Tailwind"],
   },
 ];
 

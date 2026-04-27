@@ -86,7 +86,7 @@ export const workProjects: WorkProject[] = [
     subtitle: "Photography Platform",
     description:
       "Secure client galleries, smart cross-device downloads, and professional invoicing for photographers worldwide.",
-    image: "/images/lumina.svg",
+    image: "/images/lumina-preview.png",
     gradient: "from-blue-600/20 via-purple-600/20 to-indigo-600/20",
     highlights: [
       "PIN-protected client galleries with secure delivery",

@@ -162,6 +162,16 @@ function ProjectCard({
         />
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0b0f19] via-[#0b0f19]/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
+
+        {/* Status badge */}
+        {project.status && (
+          <div className="absolute top-4 right-4">
+            <span className="px-2.5 py-1 text-xs font-semibold rounded-full bg-[--color-primary]/15 text-[--color-primary] border border-[--color-primary]/25 backdrop-blur-sm">
+              {project.status}
+            </span>
+          </div>
+        )}
+
         {/* Floating title on image */}
         <div className="absolute bottom-4 left-5 right-5">
           <p className="text-xs font-semibold uppercase tracking-wider text-[--color-primary] mb-1">

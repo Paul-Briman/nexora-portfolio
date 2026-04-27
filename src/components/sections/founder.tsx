@@ -30,12 +30,12 @@ export function FounderSection() {
                       "radial-gradient(circle, rgba(139,92,246,0.15), transparent)",
                   }}
                 >
-                  <div className="relative w-64 h-72 sm:w-72 sm:h-80 rounded-2xl overflow-hidden shadow-lg group">
+                  <div className="relative w-64 h-[420px] sm:w-72 sm:h-[480px] rounded-2xl overflow-hidden shadow-xl group bg-[--color-card]">
                     <Image
-                      src="/images/founder.svg"
+                      src="/images/founder-photo.jpeg"
                       alt="Briman Paul — Founder of Nexora"
                       fill
-                      className="object-cover transition-transform duration-300 ease-out group-hover:scale-105"
+                      className="object-contain object-center transition-transform duration-500 ease-out group-hover:scale-[1.03]"
                     />
                   </div>
                 </div>
